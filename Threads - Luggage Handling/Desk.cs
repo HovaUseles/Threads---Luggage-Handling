@@ -14,13 +14,30 @@ namespace Threads___Luggage_Handling
 
         public Desk()
         {
-            thread = new Thread();
+            thread = new Thread(ThreadController);
             luggageLine = new Queue<Luggage>();
         }
 
         public void StartThread()
         {
             thread.Start();
+        }
+
+        private void ThreadController()
+        {
+
+        }
+
+        private void HandleLuggage()
+        {
+
+        }
+
+        private Ticket Ticket()
+        {
+
+
+            return new Ticket();
         }
     }
 }
